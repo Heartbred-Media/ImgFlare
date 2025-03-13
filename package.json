@@ -1,0 +1,43 @@
+{
+  "name": "@heartbred/imgflare",
+  "version": "1.0.0",
+  "description": "Cloudflare Images migration and management tool",
+  "main": "bin/imgflare.js",
+  "type": "module",
+  "bin": {
+    "imgflare": "./bin/imgflare.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint .",
+    "build": "echo 'No build step required'"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.7",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "inquirer": "^9.2.12",
+    "node-fetch": "^3.3.2",
+    "open": "^10.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "homepage": "https://github.com/heartbred/imgflare",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heartbred/imgflare.git"
+  },
+  "keywords": [
+    "cloudflare",
+    "images",
+    "migration",
+    "cli"
+  ],
+  "author": "Heartbred",
+  "license": "MIT"
+}
