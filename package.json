@@ -13,12 +13,14 @@
     "build": "echo 'No build step required'"
   },
   "dependencies": {
-    "sqlite3": "^5.1.7",
     "chalk": "^5.3.0",
     "commander": "^11.1.0",
+    "form-data": "^4.0.2",
+    "image-size": "^2.0.1",
     "inquirer": "^9.2.12",
     "node-fetch": "^3.3.2",
-    "open": "^10.0.3"
+    "open": "^10.0.3",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "eslint": "^8.56.0",

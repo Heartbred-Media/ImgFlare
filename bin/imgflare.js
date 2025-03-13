@@ -13,6 +13,8 @@ import listCommand from '../lib/commands/list.js';
 import searchCommand from '../lib/commands/search.js';
 import openCommand from '../lib/commands/open.js';
 import exportCommand from '../lib/commands/export.js';
+import deleteCommand from '../lib/commands/delete.js';
+import variantsCommand from '../lib/commands/variants.js';
 
 // Set up CLI program
 program
@@ -30,6 +32,8 @@ listCommand(program);
 searchCommand(program);
 openCommand(program);
 exportCommand(program);
+deleteCommand(program);
+variantsCommand(program);
 
 // Handle errors
 program.showHelpAfterError('(add --help for additional information)');
