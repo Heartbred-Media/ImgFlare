@@ -2,6 +2,9 @@
 
 A command-line utility for migrating and managing images on Cloudflare Images service.
 
+[![npm version](https://img.shields.io/npm/v/@heartbred/imgflare.svg)](https://www.npmjs.com/package/@heartbred/imgflare)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 ## Features
 
 - Upload external images to Cloudflare Images
@@ -21,6 +24,35 @@ git clone [repository-url]
 cd imgflare
 npm install
 npm link
+```
+
+## Development
+
+This project includes a Makefile to simplify common development tasks:
+
+```bash
+# Show all available commands
+make help
+
+# Install dependencies
+make install
+
+# Run tests
+make test
+make test-single TEST_NAME="test name pattern"
+
+# Linting
+make lint
+
+# Run the CLI in development mode
+make run-dev
+
+# Link/unlink package globally
+make link
+make unlink
+
+# Security audit
+make audit
 ```
 
 ## Configuration
@@ -131,6 +163,14 @@ imgflare export json
 imgflare export csv
 ```
 
+## Security
+
+If you discover a security vulnerability, please open an issue or submit a pull request with the fix.
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for version details and updates.
+
 ## License
 
-MITImgFlare
+MIT
