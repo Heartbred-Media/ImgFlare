@@ -21,7 +21,7 @@ import variantsCommand from '../lib/commands/variants.js';
 program
   .name('imgflare')
   .description('Cloudflare Images migration and management tool')
-  .version('1.0.1');
+  .version('1.1.0');
 
 // Register commands
 setupCommand(program);
