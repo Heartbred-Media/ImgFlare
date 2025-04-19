@@ -72,6 +72,8 @@ This will prompt you for:
 
 ### Upload a single image
 
+#### From URL
+
 ```bash
 imgflare upload "<image-url>"
 ```
@@ -82,6 +84,24 @@ Examples:
 ```bash
 imgflare upload "https://example.com/image.jpg"
 imgflare upload "https://example.com/image.jpg?width=800&height=600"
+```
+
+#### From local file
+
+You can upload images directly from your local filesystem:
+
+```bash
+# Using the dedicated command
+imgflare upload-local "<file-path>"
+
+# Or using the --local flag with the upload command
+imgflare upload --local "<file-path>"
+```
+
+Examples:
+```bash
+imgflare upload-local "./images/photo.jpg"
+imgflare upload --local "~/Pictures/image.png"
 ```
 
 ### Process a batch of images from a JSON file

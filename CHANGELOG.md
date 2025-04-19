@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Added support for uploading local image files via new `upload-local` command and `--local` flag
+- Added robust metadata extraction for local image files
+
 ## [1.0.1] - 2025-04-19
 
 ### Security
