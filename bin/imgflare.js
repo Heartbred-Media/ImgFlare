@@ -2,6 +2,14 @@
 
 import { program } from 'commander';
 import chalk from 'chalk';
+import { readFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+
+// Get package.json version
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+const packageJson = JSON.parse(readFileSync(join(__dirname, '..', 'package.json'), 'utf8'));
 
 // Import command modules
 import setupCommand from '../lib/commands/setup.js';
@@ -21,7 +29,7 @@ import variantsCommand from '../lib/commands/variants.js';
 program
   .name('imgflare')
   .description('Cloudflare Images migration and management tool')
-  .version('1.1.0');
+  .version(packageJson.version);
 
 // Register commands
 setupCommand(program);

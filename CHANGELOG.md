@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.1] - 2025-06-05
+
+### Security
+- Updated `tar-fs` dependency from 2.1.2 to 2.1.3 to address security vulnerability
+
 ## [1.1.0] - 2025-04-19
 
 ### Added
