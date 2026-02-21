@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.4] - 2026-02-21
+
+### Security
+- Resolved all 37 npm audit vulnerabilities (4 low, 2 moderate, 31 high)
+- Removed unused `tar-fs` devDependency
+- Upgraded `eslint` from v8 to v9 with new flat config format
+- Added npm overrides for `tar` (^7.5.8) and `minimatch` (^10.0.0) to fix high-severity transitive dependency vulnerabilities
+- Updated transitive dependencies to patch `tmp`, `js-yaml`, `ajv`, and `brace-expansion` vulnerabilities
+
 ## [1.1.3] - 2025-09-29
 Security
 Updated tar-fs dependency from 2.1.3 to 2.1.4 to address security vulnerability
