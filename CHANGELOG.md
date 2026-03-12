@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-03-12
+
+### Changed
+- Replaced `sqlite3` with `better-sqlite3` for database operations. Existing databases are fully compatible — no migration needed.
+
+### Security
+- Resolved remaining Dependabot alerts (tar, minimatch, @tootallnate/once) by removing the `node-gyp` build dependency chain entirely
+- Removed `tar` and `minimatch` npm overrides (no longer needed without `node-gyp`)
+
 ## [1.1.4] - 2026-02-21
 
 ### Security
