@@ -7,8 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.3.0] - 2026-05-20
+
 ### Added
-- Implemented `imgflare batch` processing with concurrent URL uploads, per-item failure handling, and terminal summary output.
+- Added functional `imgflare batch` processing for JSON image lists, including concurrent uploads, per-image failure reporting, and terminal summary output.
+
+### Fixed
+- Prevented remote metadata fetches from hanging indefinitely during batch and URL uploads.
 
 ## [1.2.0] - 2026-03-12
 
