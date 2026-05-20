@@ -187,7 +187,15 @@ imgflare stats
 ```bash
 imgflare export json
 imgflare export csv
+imgflare export csv --file ./migration-map.csv
+imgflare export json --status complete
 ```
+
+Exports include image IDs, original URLs, Cloudflare URLs, status, metadata, timestamps, errors, and variant data. If no `--file` is provided, ImgFlare writes to `imgflare-export-YYYY-MM-DD.<format>` in the current directory.
+
+Options:
+- `--file <file>` or `-f <file>`: Output file path
+- `--status <status>` or `-s <status>`: Filter by status
 
 ## Security
 
