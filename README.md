@@ -119,6 +119,12 @@ The JSON file should be an array of objects with a `url` property:
 ]
 ```
 
+Options:
+- `--concurrency <number>` or `-c <number>`: Number of concurrent uploads (default: 3)
+- `--force` or `-f`: Upload URLs without a recognized image extension
+
+Batch processing continues after individual upload failures and prints a terminal summary when complete. The command exits with a non-zero status if any image fails.
+
 ### List uploaded images
 
 ```bash
