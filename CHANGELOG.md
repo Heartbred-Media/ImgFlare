@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Implemented `imgflare batch` processing with concurrent URL uploads, per-item failure handling, and terminal summary output.
+
 ## [1.2.0] - 2026-03-12
 
 ### Changed
