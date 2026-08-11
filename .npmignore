@@ -11,3 +11,4 @@ project-guide.md
 *.tgz
 coverage/
 logs/
+test/

@@ -8,7 +8,7 @@
     "imgflare": "./bin/imgflare.js"
   },
   "scripts": {
-    "test": "jest",
+    "test": "node --test",
     "lint": "eslint .",
     "build": "echo 'No build step required'"
   },
