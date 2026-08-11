@@ -1,6 +1,6 @@
 {
   "name": "@heartbred/imgflare",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Cloudflare Images migration and management tool",
   "main": "bin/imgflare.js",
   "type": "module",
@@ -8,7 +8,7 @@
     "imgflare": "./bin/imgflare.js"
   },
   "scripts": {
-    "test": "jest",
+    "test": "node --test",
     "lint": "eslint .",
     "build": "echo 'No build step required'"
   },
@@ -26,6 +26,14 @@
     "@eslint/js": "^9.39.3",
     "eslint": "^9.0.0",
     "jest": "^29.7.0"
+  },
+  "overrides": {
+    "@eslint/eslintrc": {
+      "js-yaml": "4.3.1"
+    },
+    "@istanbuljs/load-nyc-config": {
+      "js-yaml": "3.15.1"
+    }
   },
   "engines": {
     "node": ">=18.0.0"
