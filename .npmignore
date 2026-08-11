@@ -1,0 +1,13 @@
+.claude/
+AGENTS.md
+CLAUDE.md
+history.md
+project-guide.md
+.imgflare/
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+*.tgz
+coverage/
+logs/
