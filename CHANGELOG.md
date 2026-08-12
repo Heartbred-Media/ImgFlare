@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Security
-- Removed vulnerable image metadata parsing and now upload the exact bounded bytes that were validated.
+- Removed vulnerable image metadata parsing. Remote response bodies are bounded before validation and upload; local uploads send the exact validated bytes.
 
 ## [1.4.2] - 2026-08-11
 

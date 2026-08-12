@@ -79,7 +79,7 @@ test('rejects unsafe remote bytes before handing them to the upload client', asy
   try {
     await assert.rejects(
       uploadImageFromUrl(`http://127.0.0.1:${port}/image.png`, { client }),
-      /ICNS files are not supported/
+      /ICNS files are not supported by the current upload safety policy/
     );
     assert.equal(uploadCalled, false);
   } finally {
